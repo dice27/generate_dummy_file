@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""Generate dummy file(s)."""
+
 import random
 import string
 import os
