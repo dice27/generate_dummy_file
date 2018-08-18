@@ -11,9 +11,11 @@ def _main():
         os.mkdir("output")
     print ('How many files will you create?')
     input_time = raw_input('>>>  ')
+
     if not input_time.isdigit():
         print ('[Err] Please enter half-width numeric characters.')
         return
+
     digit = 16
     for i in range(int(input_time)):
         pre_name = ''.join([random.choice(string.ascii_letters + string.digits) for _ in range(digit)])
