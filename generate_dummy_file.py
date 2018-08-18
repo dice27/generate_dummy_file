@@ -5,6 +5,7 @@ import random
 import string
 import os
 
+
 def create_dummy_files():
     if not os.path.exists("output"):
         os.mkdir("output")
@@ -19,6 +20,7 @@ def create_dummy_files():
         with open('output/{}.txt'.format(random_str), 'w') as f:
             f.write('Dummy')
     print ('Creation of the file is completed.')
+
 
 if __name__ == '__main__':
     create_dummy_files()
