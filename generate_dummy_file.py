@@ -16,8 +16,8 @@ def create_dummy_files():
         return
     digit = 16
     for i in range(int(input_time)):
-        random_str = ''.join([random.choice(string.ascii_letters + string.digits) for _ in range(digit)])
-        with open('output/{}.txt'.format(random_str), 'w') as f:
+        pre_name = ''.join([random.choice(string.ascii_letters + string.digits) for _ in range(digit)])
+        with open('output/{}.txt'.format(pre_name), 'w') as f:
             f.write('Dummy')
     print ('Creation of the file is completed.')
 
