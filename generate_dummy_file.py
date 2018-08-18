@@ -6,7 +6,7 @@ import string
 import os
 
 
-def create_dummy_files():
+def _main():
     if not os.path.exists("output"):
         os.mkdir("output")
     print ('How many files will you create?')
@@ -23,4 +23,4 @@ def create_dummy_files():
 
 
 if __name__ == '__main__':
-    create_dummy_files()
+    _main()
